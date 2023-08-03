@@ -13,12 +13,9 @@ for (let i = 0; i < spans.length; i++) {
 
   if (Math.random() < 0.5) {
     spans[i].style.left = "-" + left + "px";
-  } else {
-    spans[i].style.left = left + "px";
-  }
-  if (Math.random() < 0.5) {
     spans[i].style.top = "-" + top + "px";
   } else {
+    spans[i].style.left = left + "px";
     spans[i].style.top = top + "px";
   }
 }
