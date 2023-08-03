@@ -1,0 +1,44 @@
+/**** Reset ****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** Style général de la page ****/
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #eceaea;
+}
+
+.main__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 87%;
+    font-family: sans-serif;
+    font-size: 26px;
+    text-align: justify;
+    color: #0f0e0e;
+}
+
+.main__content span {
+    position: relative;
+    opacity: 0;
+    animation: textAnimation 5s ease-in-out forwards;
+}
+
+/**** Création de l'animation textAnimation ****/
+
+@keyframes textAnimation {
+    to {
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
